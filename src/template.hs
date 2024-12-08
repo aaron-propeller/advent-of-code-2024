@@ -1,4 +1,8 @@
+import System.Environment (getArgs)
+
 main :: IO ()
-main = do file <- readFile "input.txt"
-          let fileLines = lines file
-          print "end"
+main = do 
+  filename <- getArgs
+  file <- readFile $ head filename
+  let fileLines = lines file
+  print "end"
