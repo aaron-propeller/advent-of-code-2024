@@ -1,0 +1,44 @@
+Button A: X+94, Y+34
+Button B: X+22, Y+67
+Prize: X=8400, Y=5400
+
+aPresses*ax + bPresses*bx = tx + tOffset
+aPresses*ax = tx + tOffset - bPresses*bx 
+aPresses = (tx + tOffset - bPresses*bx)/ax
+
+aPresses*ay + bPresses*by = ty + tOffset
+aPresses*ay = ty + tOffset - bPresses*by
+aPresses = (ty + tOffset - bPresses*by)/ay
+
+(tx + tOffset - bPresses*bx)/ax = (ty + tOffset - bPresses*by)/ay
+ay*(tx + tOffset - bPresses*bx) = ax*(ty + tOffset - bPresses*by)
+ay*tx + ay*tOffset - ay*bPresses*bx = ax*ty + ax*tOffset - ax*bPresses*by
+ay*tOffset - ay*bPresses*bx = ax*tOffset - ax*bPresses*by + ax*ty - ay*tx
+ax*bPresses*by - ay*bPresses*bx = ax*tOffset - ay*tOffset + ax*ty - ay*tx
+bPresses*(ax*by - ay*bx) = ax*tOffset - ay*tOffset + ax*ty - ay*tx
+bPresses = (ax*tOffset - ay*tOffset + ax*ty - ay*tx)/(ax*by - ay*bx)
+
+a*94 + b*22=8400+10000000000000
+94*(5400 - b*67)/34 + 22*b = 8400
+(5400 - b*67)*94 + 22*34*b = 8400*34
+5400*94 - 94*b*67 + 22*34*b = 8400*34
+507,600 - 6,298b + 748b = 285,600
+507,600 - 5,550b = 285,600
+5,550b = 222,000
+b = 40
+
+a*34 + b*67=5400
+a*34 = 5400 - b*67
+a = (5400 - b*67)/34
+
+Button A: X+26, Y+66
+Button B: X+67, Y+21
+Prize: X=12748, Y=12176
+
+Button A: X+17, Y+86
+Button B: X+84, Y+37
+Prize: X=7870, Y=6450
+
+Button A: X+69, Y+23
+Button B: X+27, Y+71
+Prize: X=18641, Y=10279
